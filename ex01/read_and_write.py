@@ -12,12 +12,12 @@ def processReplacing(str):
 	return ''.join(result) + '\n'
 
 def replaceCommaToTab():
-	with open("ds.csv", "r", encoding="utf-8") as file:
-		content = file.readlines()
+	with open("ds.csv", "r", encoding="utf-8") as file_input:
+		content = file_input.readlines()
 
-	with open("ds.csv", "w", encoding="utf-8") as file:
+	with open("ds.tsv", "w", encoding="utf-8") as file_output:
 		for line in content:
-			file.write(processReplacing(line.strip()))
+			file_output.write(processReplacing(line.strip()))
 
 
 if __name__ == '__main__':
