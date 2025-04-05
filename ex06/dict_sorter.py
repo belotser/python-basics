@@ -22,5 +22,11 @@ def dict_sort():
 		('Israel', '12')
   	]
 
+	sorted_list_of_tuples = sorted(list_of_tuples, key=lambda item: item[0])
+	sorted_list_of_tuples = sorted(sorted_list_of_tuples, key=lambda item: int(item[1]))
+
+	for pair in sorted_list_of_tuples:
+		print(pair[0], pair[1])
+
 if __name__ == '__main__':
 	dict_sort()
