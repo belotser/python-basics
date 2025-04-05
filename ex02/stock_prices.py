@@ -18,7 +18,7 @@ def find_price():
   }
 
 	if (len(sys.argv) != 2):
-		sys.exit()
+		return
 	else:
 		try:
 			company = sys.argv[1].lower()

@@ -18,7 +18,7 @@ def allStocks():
 	}
 
 	if (len(sys.argv) != 2):
-		sys.exit()
+		return
 
 	input_str = sys.argv[1]
 	input_args = input_str.split(',')
@@ -26,7 +26,7 @@ def allStocks():
 	for i in range(0, len(input_args)):
 		clear_input_args.append(input_args[i].strip())
 		if (clear_input_args[i] == "" or clear_input_args[i].isspace()):
-			sys.exit()
+			return
 
 	for arg in clear_input_args:
 		company = next((company_name for company_name, comp in COMPANIES.items() if comp.lower() == arg.lower()), None)

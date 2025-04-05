@@ -18,7 +18,7 @@ def find_name_and_price():
 	}
 
 	if (len(sys.argv) != 2):
-		sys.exit()
+		return
 	else:
 		try:
 			# comp - тикер, company_name - возвращаемый элемент, т.е. цикл for..in
