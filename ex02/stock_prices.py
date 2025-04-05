@@ -1,6 +1,6 @@
 import sys
 
-def stock():
+def find_price():
 	COMPANIES = {
   'Apple': 'AAPL',
   'Microsoft': 'MSFT',
@@ -27,4 +27,4 @@ def stock():
 			print("Unknown company")
 
 if __name__ == '__main__':
-	stock()
+	find_price()
